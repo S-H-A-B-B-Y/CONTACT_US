@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_message"
+        android:layout_width="387dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Please Enter your Message"
+            android:textAlignment="viewStart"
+            android:textIsSelectable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/bt_WA_PK"
+        android:layout_width="336dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_whatsapp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:text="WHATSAPP (PK)"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_send"
+        app:layout_constraintStart_toStartOf="@+id/bt_send"
+        app:layout_constraintTop_toBottomOf="@+id/bt_send" />
+
+    <Button
+        android:id="@+id/bt_WA_USA"
+        android:layout_width="336dp"
+        android:layout_height="58dp"
+        android:drawableLeft="@drawable/ic_whatsapp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:text="WHATSAPP (USA)"
+
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_WA_PK"
+        app:layout_constraintStart_toStartOf="@+id/bt_WA_PK"
+        app:layout_constraintTop_toBottomOf="@+id/bt_WA_PK" />
+
+    <Button
+        android:id="@+id/bt_WA_GB"
+        android:layout_width="336dp"
+        android:layout_height="58dp"
+        android:drawableLeft="@drawable/ic_whatsapp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:text="GOODWORD BOOKS"
+
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_WA_USA"
+        app:layout_constraintStart_toStartOf="@+id/bt_WA_USA"
+        app:layout_constraintTop_toBottomOf="@+id/bt_WA_USA" />
+
+    <Button
+        android:id="@+id/bt_site"
+        android:layout_width="336dp"
+        android:layout_height="58dp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:text="VISIT OUR WEBSITE"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_WA_GB"
+        app:layout_constraintStart_toStartOf="@+id/bt_WA_GB"
+        app:layout_constraintTop_toBottomOf="@+id/bt_WA_GB" />
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Send"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_message"
+        app:layout_constraintStart_toStartOf="@+id/et_message"
+        app:layout_constraintTop_toBottomOf="@+id/et_message" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="349dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:text="Center for Peace and Spiritually"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="308dp"
+        android:layout_height="28dp"
+        android:text="Get in Touch With Us"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
